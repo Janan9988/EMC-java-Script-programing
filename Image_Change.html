@@ -1,0 +1,28 @@
+<style>
+    div{
+        
+        width: 500px;
+        height: 500px;
+    }
+
+</style>
+<div id="image">
+    <img src="Lion.jpeg">
+</div>
+<div id="image-container">
+</div>
+
+
+
+<button onclick="">ChangeImg</button>
+<script>
+    var image=document.getElementById("image")
+    var imageContainer = document.getElementById("image-container");
+    function Change_Img(){
+        storedImage = new Image();
+        storedImage.src = "Tiger.jpeg";
+        storedImage.alt = "Description of the image";
+        imageContainer.innerHTML = "";  
+        imageContainer.appendChild(storedImage);
+    }
+</script>
